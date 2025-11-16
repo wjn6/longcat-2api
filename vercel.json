@@ -1,24 +1,17 @@
 {
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/v1/models",
-      "dest": "/api/v1/models.js"
+      "source": "/v1/models",
+      "destination": "/api/v1/models"
     },
     {
-      "src": "/v1/chat/completions",
-      "dest": "/api/v1/chat/completions.js"
+      "source": "/v1/chat/completions",
+      "destination": "/api/v1/chat/completions"
     }
   ],
   "headers": [
     {
-      "source": "/api/(.*)",
+      "source": "/(.*)",
       "headers": [
         { "key": "Access-Control-Allow-Credentials", "value": "true" },
         { "key": "Access-Control-Allow-Origin", "value": "*" },
