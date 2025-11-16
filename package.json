@@ -1,0 +1,22 @@
+{
+  "name": "longcat-2api-vercel",
+  "version": "1.0.0",
+  "description": "LongCat 2API - Vercel Serverless 版本",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "longcat",
+    "openai",
+    "api",
+    "vercel",
+    "serverless"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^33.0.0"
+  }
+}
